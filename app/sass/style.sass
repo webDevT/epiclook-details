@@ -1,0 +1,217 @@
+@import "vars"
+@import "fonts"
+
+//start global style
+* 
+    box-sizing: border-box
+body 
+    background: #F6FAFE
+    box-sizing: border-box
+    font-family: $main-font
+    font-size: 16px
+    color: $text-color
+    padding: 0 
+    margin: 0
+.content 
+    width: 700px 
+    max-width: 90vw
+    margin-left: auto 
+    margin-right: auto
+.title-large 
+    font-size: 22px
+//end global style
+
+//start header style
+.header 
+    padding-top: 18px 
+    padding-bottom: 18px
+    display: flex 
+    justify-content: flex-start 
+    align-items: center
+    color: #171C1F 
+    text-decoration: none
+    img 
+        display: block 
+        margin-right: 20px
+//end header style
+
+//start main screen style
+.photo-background
+    width: 100%
+    height: 465px
+    object-fit: cover 
+    object-position: center
+    border-radius: 28px
+.photo-wrapper
+    position: relative
+.photo 
+    position: absolute 
+    top: 52px 
+    left: 50% 
+    transform: translateX(-50%)
+    width: 194px
+    height: 274px
+    object-fit: cover 
+    object-position: center
+    border: 2px solid #4C3E31
+    box-shadow: 5px 5px 12.6px rgba(#000, 0.25)
+//end main screen style 
+
+//start table style 
+.table 
+    width: 100%
+    margin-top: 30px
+    padding-bottom: 110px
+th 
+    text-align: left
+    font-size: 22px
+    padding-top: 10px 
+    padding-bottom: 10px
+    font-weight: 400
+tr td:last-child,
+tr th:last-child  
+    text-align: right
+td
+    padding-top: 10px 
+    padding-bottom: 10px
+tr td:last-child
+    color: $secondary-color
+    font-weight: 500
+.label 
+    display: inline-block
+input[type="radio"]
+    display: none
+.radio-label
+    width: 20px 
+    min-width: 20px
+    height: 20px
+    border: 2px solid #41484D
+    display: inline-block
+    border-radius: 50%
+    position: relative
+    cursor: pointer
+    top: 3.2px
+    margin-right: 15px
+input[type="radio"]:checked + label 
+    border-color: $secondary-color
+input[type="radio"]:checked + label:after
+    content: ''
+    width: 10px 
+    height: 10px 
+    background: $secondary-color 
+    border-radius: 50%
+    position: absolute 
+    top: 50% 
+    left: 50% 
+    transform: translateX(-50%) translateY(-50%)
+.label 
+    background: $gold
+    color: #fff
+    font-size: 14px
+    padding: 2px 5px
+    border-radius: 4px
+    margin-left: 10px 
+    margin-right: 10px
+.strikethrough
+    position: relative
+.strikethrough:after 
+    content: ''
+    width: 100% 
+    height: 1px
+    position: absolute 
+    top: 50%
+    left: 0
+    background: $red
+    transform: rotate(-10deg)
+    border-bottom: 1px solid #fff
+tr.popular td
+    border-bottom: 1px solid #C0C7CD
+//end table style 
+
+//start fixed button style 
+.fixed-button-wrapper 
+    position: fixed 
+    bottom: 0 
+    left: 0 
+    width: 100%
+    z-index: 999
+    display: flex 
+    justify-content: center
+    padding-bottom: 50px
+    background: rgba(#fff, 0.8)
+    .button 
+        width: 700px 
+        max-width: 90vw
+
+        
+.button 
+    background: $secondary-color
+    display: flex 
+    justify-content: center 
+    align-items: center
+    color: #fff
+    height: 40px 
+    border-radius: 50px
+    font-size: 14px
+    text-decoration: none
+//end fixed button style 
+
+.order-description-content
+    background: #C3E8FF
+    padding: 0 16px
+    border-radius: 8px
+.order-description-content__row
+    display: flex 
+    justify-content: space-between 
+    align-items: center
+    padding: 16px 0
+    border-bottom: 1px solid rgba(#71787D, 0.2)
+.order-description-content__row:last-child 
+    border-bottom: none
+.new-price 
+    color: $secondary-color
+    font-size: 22px
+.order-description-content__col
+    .strikethrough
+        font-size: 22px
+.order-description__item
+    padding-top: 8px 
+    padding-bottom: 8px
+    display: flex 
+    align-items: center
+    font-weight: 500
+.order-description-list
+    margin-top: 16px
+.order-description__item-icon
+    width: 30px 
+    height: 30px 
+    min-width: 30px
+    background: #C3E8FF
+    border-radius: 50%
+    display: flex 
+    justify-content: center 
+    align-items: center
+    margin-right: 10px
+.thank-you-wrapper
+    height: 90vh 
+    display: flex 
+    justify-content: center 
+    align-items: center
+    text-align: center
+    flex-direction: column
+.thank-you__title
+    font-size: 26px
+    font-weight: 600
+.thank-you__text
+    font-size: 20px
+    padding-top: 15px 
+    padding-bottom: 15px
+.order-num
+    font-size: 18px 
+    span 
+        font-weight: 700
+        color: $secondary-color
+@import "media"
+
+
+
