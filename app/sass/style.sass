@@ -77,6 +77,8 @@ td
 tr td:last-child
     color: $secondary-color
     font-weight: 500
+tr td:first-child 
+    font-weight: 600
 .label 
     display: inline-block
 input[type="radio"]
@@ -150,9 +152,9 @@ tr.popular td
     justify-content: center 
     align-items: center
     color: #fff
-    height: 40px 
+    height: 60px 
+    font-size: 20px
     border-radius: 50px
-    font-size: 14px
     text-decoration: none
 //end fixed button style 
 
@@ -203,13 +205,20 @@ tr.popular td
     font-size: 26px
     font-weight: 600
 .thank-you__text
-    font-size: 20px
+    font-size: 18px
     padding-top: 15px 
     padding-bottom: 15px
 .order-num
-    font-size: 18px 
+    font-size: 16px 
     span 
-        font-weight: 700
+        font-weight: 500
+        color: $secondary-color
+    a 
+        font-weight: 500 
+        color: $secondary-color
+.thank-you__text
+    span 
+        font-weight: 500
         color: $secondary-color
 @import "media"
 
